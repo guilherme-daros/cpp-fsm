@@ -1,13 +1,11 @@
-#include <iostream>
-
-#include "aCoolStateMachine.h"
+#include "aCoolStateMachine.hpp"
 
 int main() {
-    srand(time(0));
-    aCoolStateMachine stateMachine;
+  srand(time(0));
+  aCoolStateMachine stateMachine;
 
-    while (!stateMachine.HasDone()) {
-        stateMachine.Update();
-    }
-    return 0;
+  while (!stateMachine.HasDone()) {
+    stateMachine.Update();
+  }
+  return 0;
 }
